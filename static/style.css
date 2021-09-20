@@ -1,0 +1,20 @@
+body {
+    background: black;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: white;
+  background-color: grey;
+}
+
+.dropdown-menu {
+  color: white;
+  background-color: #000000;
+}
