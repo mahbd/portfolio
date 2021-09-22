@@ -1,7 +1,25 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Mahmudul Alam{% endblock title %}
 {% block content %}
-    <div class="container">
-    {% include 'main/navbar.html' %}
+    <div id="navbar" class="container">
+        {% include 'main/navbar.html' %}
+    </div>
+    <div id="slider" class="fullscreen flex-center">
+        <p class="display-4 text-center">Hi, I'm <br> Mahmudul Alam <br>
+            <span class="text-gray text-center h5">Professional Web developer</span></p>
+    </div>
+    <div id="about-me" class="container fullscreen">
+        {% include 'main/about_me.html' %}
+    </div>
+
+    <div id="education" class="container fullscreen">
+    {% include 'main/education.html' %}
+    </div>
+    <div id="about-me" class="container fullscreen">
+        <h2 class="h2">Skill</h2>
+    </div>
+    <div id="about-me" class="container">
+        <h2 class="h2">Projects</h2>
     </div>
 {% endblock content %}

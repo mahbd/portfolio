@@ -1,20 +1,44 @@
 body {
     background: black;
+    color: white;
 }
 
 .bg-black {
-  background-color: #000000 !important;
+    background-color: #000000 !important;
 }
 
 .dropdown-item {
-  color: white;
+    color: white;
 }
+
 .dropdown-item:hover, .dropdown-item:focus {
-  color: white;
-  background-color: grey;
+    color: white;
+    background-color: grey;
 }
 
 .dropdown-menu {
-  color: white;
-  background-color: #000000;
+    color: white;
+    background-color: #000000;
 }
+
+.text-gray {
+    color: grey;
+}
+
+.fullscreen {
+    width: 100vw;
+    min-height: 95vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: page;
+}
+
+.icon-area {
+    height: 20vw;
+    width: 20vw;
+}
+
