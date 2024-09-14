@@ -1,129 +1,59 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import logo from '$lib/images/m64.bmp';
+
+	const navItems = [
+		{
+			name: 'Services',
+			href: '#services'
+		},
+		{
+			name: 'Works',
+			href: '#works'
+		},
+		{
+			name: 'Resume',
+			href: '#resume'
+		},
+		{
+			name: 'Skills',
+			href: '#skills'
+		},
+		{
+			name: 'Testimonials',
+			href: '#testimonials'
+		},
+		{
+			name: 'Contact',
+			href: '#contact'
+		}
+	];
 </script>
 
-<header class="z-50">
-	<div class="corner">
+<header class="flex items-center justify-between px-8 pt-5">
+	<div>
 		<a href="https://mahmudul.com.bd">
-			<img src={logo} alt="SvelteKit" />
+			<img src={logo} alt="M" class="w-10 h-10" />
 		</a>
 	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Education</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">Skills</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Contacts</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
+	<div class="flex items-center justify-between w-[600px]">
+		{#each navItems as item}
+			<a
+				href={item.href}
+				class="font-bold hover:underline hover:text-green-500 hover:cursor-pointer {$page.url
+					.hash === item.href
+					? 'text-green-500'
+					: ''}">{item.name}</a
+			>
+		{/each}
+	</div>
 
-	<div class="corner">
-		<a href="https://github.com/mahbd">
-			<img src={github} alt="GitHub" />
-		</a>
+	<div>
+		<a
+			href="https://www.fiverr.com/mahmudula2000"
+			target="_blank"
+			class="gradient-button hover:bg-gradient-to-r px-8 py-2 rounded-full">Hire Me</a
+		>
 	</div>
 </header>
-
-<style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.8);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
-	}
-</style>
