@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+    /* Example: Set default background/text if needed */
+    background-color: #050f02; /* Adjust to match your dark theme */
+    color: #e5e7eb; /* Example text color */
+}
+
+/* Recreate gradient styles (adjust colors as needed) */
+.gradient-text {
+    @apply bg-gradient-to-r from-green-400 via-green-500 to-green-600 bg-clip-text text-transparent;
+}
+
+.gradient-button {
+    @apply bg-gradient-to-l from-green-700 to-green-500;
+    /* Default gradient */
+}
+
+/* Add hover state for the button separately if needed in components,
+   or define a component variant */
+.gradient-button-hover:hover {
+    @apply bg-gradient-to-r;
+    /* Change direction on hover */
+}
