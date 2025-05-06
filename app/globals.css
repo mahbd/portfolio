@@ -1,24 +1,78 @@
+/* globals.css */
 @import "tailwindcss";
 
-body {
-    /* Example: Set default background/text if needed */
-    background-color: #050f02; /* Adjust to match your dark theme */
-    color: #e5e7eb; /* Example text color */
+:root,
+[data-theme='dark'] {
+    --color-background: #050f02;
+    --color-foreground: #e5e7eb;
+    --color-input-background: #0a1306;
+    --color-card-background: #052e16; /* For elements like skill cards, exp cards */
+    --color-card-hover-background: #064e3b;
+    --color-white: #ffffff;
+    --color-transparent: transparent;
+
+    --color-brand-green-300: #86efac;
+    --color-brand-green-400: #4ade80;
+    --color-brand-green-500: #22c55e;
+    --color-brand-green-600: #16a34a;
+    --color-brand-green-700: #15803d;
+    --color-brand-green-800: #166534;
+    --color-brand-green-900: #14532d;
+    --color-brand-green-950: #052e16;
+
+    --color-brand-gray-300: #d1d5db;
+    --color-brand-gray-400: #9ca3af;
+
+    --gradient-text-from: var(--color-brand-green-400);
+    --gradient-text-via: var(--color-brand-green-500);
+    --gradient-text-to: var(--color-brand-green-600);
+
+    --gradient-button-from: var(--color-brand-green-700);
+    --gradient-button-to: var(--color-brand-green-500);
 }
 
-/* Recreate gradient styles (adjust colors as needed) */
+[data-theme='light'] {
+    --color-background: #f3f4f6;
+    --color-foreground: #1f2937;
+    --color-input-background: #ffffff;
+    --color-card-background: #ffffff;
+    --color-card-hover-background: #e5e7eb;
+    --color-white: #ffffff;
+    --color-transparent: transparent;
+
+    --color-brand-green-300: #6ee7b7;
+    --color-brand-green-400: #34d399;
+    --color-brand-green-500: #10b981;
+    --color-brand-green-600: #059669;
+    --color-brand-green-700: #047857;
+    --color-brand-green-800: #065f46;
+    --color-brand-green-900: #064e3b;
+    --color-brand-green-950: #022c22;
+
+    --color-brand-gray-300: #4b5563;
+    --color-brand-gray-400: #374151;
+
+    --gradient-text-from: var(--color-brand-green-500);
+    --gradient-text-via: var(--color-brand-green-600);
+    --gradient-text-to: var(--color-brand-green-700);
+
+    --gradient-button-from: var(--color-brand-green-700);
+    --gradient-button-to: var(--color-brand-green-500);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+
 .gradient-text {
-    @apply bg-gradient-to-r from-green-400 via-green-500 to-green-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[var(--gradient-text-from)] via-[var(--gradient-text-via)] to-[var(--gradient-text-to)] bg-clip-text text-[var(--color-transparent)];
 }
 
 .gradient-button {
-    @apply bg-gradient-to-l from-green-700 to-green-500;
-    /* Default gradient */
+    @apply bg-gradient-to-l from-[var(--gradient-button-from)] to-[var(--gradient-button-to)];
 }
 
-/* Add hover state for the button separately if needed in components,
-   or define a component variant */
 .gradient-button-hover:hover {
     @apply bg-gradient-to-r;
-    /* Change direction on hover */
 }
