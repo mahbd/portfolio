@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     >
       <div className="bg-[var(--color-card-background)] p-5 rounded-2xl w-full max-w-lg order-2 md:order-1 shadow-lg">
         <h2 className="font-bold text-3xl md:text-4xl gradient-text text-center mb-4">
-          Let's Talk
+          Let&#39;s Talk
         </h2>
         <p className="text-center mb-6 md:mb-10 text-[var(--color-brand-gray-300)]">
           I design and code beautifully simple things, and I love what I do.
