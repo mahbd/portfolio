@@ -127,3 +127,36 @@ export const skills: Skill[] = [
   { icon: SiKotlin, percentage: 70, name: "Kotlin" },
   { icon: SiDocker, percentage: 60, name: "Docker" },
 ];
+
+export const statItemsData = [
+  {
+    type: "stat" as const,
+    value: "4",
+    label1: "Years of",
+    label2: "Experience",
+  },
+  {
+    type: "stat" as const,
+    value: "10+",
+    label1: "Real Life Projects",
+    label2: "Completed",
+  },
+  {
+    type: "stat" as const,
+    value: "1691",
+    label1: "Codeforces",
+    label2: "Rating",
+  },
+  {
+    type: "stat" as const,
+    value: "2.5k+",
+    label1: "Problems",
+    label2: "Solved",
+  },
+  {
+    type: "achievement" as const,
+    title: "Two Times Divisional Champion",
+    subtitle:
+      "In International Collegiate Programming Contest (ICPC), Asia Dhaka Regional Contest",
+  },
+];
