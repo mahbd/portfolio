@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
           and efficient solutions that help millions of people.
         </motion.p>
         <motion.a
-          href="/path/to/your/resume.pdf"
+          href="/resume.pdf"
           download
           variants={itemVariants}
           whileHover={{ scale: 1.05 }}

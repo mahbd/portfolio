@@ -28,12 +28,6 @@ const ServicesSection: React.FC = () => {
     }),
   };
 
-  const itemHoverProps = {
-    scale: 1.03,
-    backgroundColor: "var(--color-card-hover-background)",
-    transition: { duration: 0.25, ease: "circOut" },
-  };
-
   return (
     <section className="pt-24 md:pt-32" id="services">
       <motion.h2
