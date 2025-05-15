@@ -11,12 +11,15 @@ import {
   SiCplusplus,
   SiDjango,
   SiDocker,
-  SiKotlin,
+  SiJavascript,
+  SiKotlin, 
   SiReact,
+  SiRust,
   SiTypescript,
 } from "react-icons/si";
-import { BsAndroid2 } from "react-icons/bs";
+import { BsAndroid2, BsGearWideConnected } from "react-icons/bs";
 import { IconType } from "react-icons";
+import { BiLogoSpringBoot } from "react-icons/bi";
 
 export interface ContactIcon {
   name: string;
@@ -73,27 +76,71 @@ export const contactIcons: ContactIcon[] = [
 ];
 
 export const services: Service[] = [
-  { name: "Backend", description: "We build robust and scalable backends..." },
+  {
+    name: "Backend",
+    description: "I build robust and scalable backends using modern technologies. My focus is on performance, security, and clean architecture.",
+  },
   {
     name: "Frontend",
-    description: "We build modern and responsive frontends...",
+    description: "I craft modern, responsive frontends with great user experience. I aim for clean design and accessibility in every project.",
   },
-  { name: "Full Stack", description: "We build full stack projects..." },
-  { name: "Application", description: "We build mobile applications..." },
+  {
+    name: "Full Stack",
+    description: "I develop full stack applications from backend to frontend. I ensure seamless integration and smooth performance across the stack.",
+  },
+  {
+    name: "Application",
+    description: "I build mobile applications that are fast and user-friendly. I focus on intuitive design and reliable performance.",
+  },
 ];
+
 
 export const works: Work[] = [
   {
     name: "EJP",
-    description: "The project was about coaching centers...",
+    description: "Easy Job Preparation is a platform for preparing for various competitive exams. You can practice for BCS, primary school exams, bank recruitment, and more. It provides organized materials and mock tests. The interface is simple and user-friendly.",
     image: "/images/ejp.png",
   },
   {
+    name: "FTS",
+    description: "The File Tracking System is designed for Begum Rokeya University. It helps track files within different offices and departments. You can see where a file currently is and its movement history. This increases transparency and efficiency.",
+    image: "/images/fts.jpg",
+  },
+  {
+    name: "DRIL",
+    description: "DRIL is a customized chat platform built for crypto users. It supports secure messaging with encryption. The interface is designed to be lightweight and intuitive. DRIL makes crypto-related discussions easier and safer.",
+    image: "/images/dril.jpg",
+  },
+  {
     name: "TSP",
-    description: "The project was about coaching centers...",
+    description: "Time Smart Professionals is tailored for accounting job seekers. It offers training content, mock tests, and tips focused on finance roles. Users can prepare for accounting exams effectively. The platform emphasizes time management and smart strategies.",
     image: "/images/tsp.png",
   },
 ];
+
+export const hobbyWorks: Work[] = [
+  {
+    name: "Game Hub",
+    description: "Game Hub allows users to browse and search through a curated list of games. It demonstrates the power and flexibility of React. The UI is clean and responsive. It’s perfect for showcasing dynamic filtering and routing.",
+    image: "/images/game-hub.png",
+  },
+  {
+    name: "Iftar Delights",
+    description: "Iftar Delights is a business model that focuses on curated dining during Ramadan. It helps users discover and order delicious iftar meals. The project highlights user experience and clean UI design. It was built with both tech and business in mind.",
+    image: "/images/iftar-delights.png",
+  },
+  {
+    name: "Components",
+    description: "Components is a collection of reusable UI parts designed to speed up development. If you ever forget where you kept a component, this tool comes to the rescue. It organizes your code assets efficiently. Ideal for scalable React projects.",
+    image: "/images/components.png",
+  },
+  {
+    name: "Issue Tracker",
+    description: "Issue Tracker helps teams manage bugs and feature requests in a project. It supports adding, editing, and closing issues efficiently. The design is simple yet effective. Perfect for developers working in teams or solo.",
+    image: "/images/issue-tracker.png",
+  },
+];
+
 
 export const experiences: Experience[] = [
   { time: "2024 - Present", role: "Full Stack Developer", company: "EJP" },
@@ -115,15 +162,19 @@ export const educations: Education[] = [
 
 export const skills: Skill[] = [
   { icon: FaPython, percentage: 95, name: "Python" },
-  { icon: SiCplusplus, percentage: 95, name: "C++" },
   { icon: SiDjango, percentage: 95, name: "Django" },
+  { icon: SiRust, percentage: 95, name: "Rust" },
+  { icon: BsGearWideConnected, percentage: 95, name: "Rust" },
+  { icon: SiCplusplus, percentage: 95, name: "C++" },
   { icon: FaLinux, percentage: 95, name: "Linux" },
   { icon: SiReact, percentage: 90, name: "React" },
   { icon: RiNextjsFill, percentage: 90, name: "Next.js" },
   { icon: SiTypescript, percentage: 90, name: "TypeScript" },
+  { icon: SiJavascript, percentage: 90, name: "JavaScript" },
   { icon: BsAndroid2, percentage: 85, name: "Android" },
   { icon: FaGitAlt, percentage: 80, name: "Git" },
   { icon: RiJavaFill, percentage: 70, name: "Java" },
+  { icon: BiLogoSpringBoot, percentage: 70, name: "Spring Boot" },
   { icon: SiKotlin, percentage: 70, name: "Kotlin" },
   { icon: SiDocker, percentage: 60, name: "Docker" },
 ];
