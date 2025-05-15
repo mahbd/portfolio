@@ -45,7 +45,7 @@ const HobbyProjectsSection: React.FC = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={cardVariants}
             // Entire card background changes on hover
-            className="group rounded-2xl overflow-hidden shadow-lg hover:bg-[var(--color-brand-green-700)] transition-colors duration-300 bg-[var(--color-card-background)]"
+            className="group rounded-2xl overflow-hidden shadow-lg hover:bg-[var(--color-card-hover-background)] transition-colors duration-300 bg-[var(--color-card-background)]"
             whileHover={{ y: -5, transition: { duration: 0.2 } }}
           >
             <div className="relative w-full aspect-video">
@@ -58,7 +58,7 @@ const HobbyProjectsSection: React.FC = () => {
             </div>
             {/* Inner div for text content, no background styling here */}
             <div className="cursor-pointer p-4">
-              <h3 className="text-2xl font-bold text-[var(--color-white)]">
+              <h3 className="text-2xl font-bold text-[var(--color-brand-green-400)]">
                 {project.name}
               </h3>
               <p className="text-sm text-[var(--color-foreground)] text-justify mt-2">

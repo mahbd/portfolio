@@ -1,78 +1,94 @@
-/* globals.css */
 @import "tailwindcss";
 
+/* Common variables, or define them within each theme if they differ significantly */
+:root {
+  --color-white: #ffffff;
+  --color-transparent: transparent;
+}
+
+/* Dark Theme (Default) */
 :root,
 [data-theme='dark'] {
-    --color-background: #050f02;
-    --color-foreground: #e5e7eb;
-    --color-input-background: #0a1306;
-    --color-card-background: #052e16; /* For elements like skill cards, exp cards */
-    --color-card-hover-background: #064e3b;
-    --color-white: #ffffff;
-    --color-transparent: transparent;
+  --color-background: #050f02;
+  --color-foreground: #e5e7eb;
+  --color-input-background: #0a1306;
+  --color-card-background: #052e16;
+  --color-card-hover-background: #064e3b;
 
-    --color-brand-green-300: #86efac;
-    --color-brand-green-400: #4ade80;
-    --color-brand-green-500: #22c55e;
-    --color-brand-green-600: #16a34a;
-    --color-brand-green-700: #15803d;
-    --color-brand-green-800: #166534;
-    --color-brand-green-900: #14532d;
-    --color-brand-green-950: #052e16;
+  --color-brand-green-300: #86efac;
+  --color-brand-green-400: #4ade80;
+  --color-brand-green-500: #22c55e;
+  --color-brand-green-600: #16a34a;
+  --color-brand-green-700: #15803d;
+  --color-brand-green-800: #166534;
+  --color-brand-green-900: #14532d;
+  --color-brand-green-950: #052e16;
 
-    --color-brand-gray-300: #d1d5db;
-    --color-brand-gray-400: #9ca3af;
+  --color-brand-gray-300: #d1d5db;
+  --color-brand-gray-400: #9ca3af;
 
-    --gradient-text-from: var(--color-brand-green-400);
-    --gradient-text-via: var(--color-brand-green-500);
-    --gradient-text-to: var(--color-brand-green-600);
+  /* Gradient text for dark theme */
+  --gradient-text-from: var(--color-brand-green-400);
+  --gradient-text-via: var(--color-brand-green-500);
+  --gradient-text-to: var(--color-brand-green-600);
 
-    --gradient-button-from: var(--color-brand-green-700);
-    --gradient-button-to: var(--color-brand-green-500);
+  --gradient-button-from: var(--color-brand-green-700);
+  --gradient-button-to: var(--color-brand-green-500);
+
+  --color-input-border: var(--color-brand-green-700); /* Darker border for dark theme inputs */
 }
 
+/* Light Theme */
 [data-theme='light'] {
-    --color-background: #f3f4f6;
-    --color-foreground: #1f2937;
-    --color-input-background: #ffffff;
-    --color-card-background: #ffffff;
-    --color-card-hover-background: #e5e7eb;
-    --color-white: #ffffff;
-    --color-transparent: transparent;
+  --color-background: #f3f4f6;       /* Light gray page background */
+  --color-foreground: #1f2937;       /* Dark gray main text */
+  --color-input-background: #ffffff; /* White input background */
+  --color-card-background: #ffffff;  /* White card background */
+  --color-card-hover-background: #dff8ed; /* Slightly greenish light gray for card hover (stats, skills) */
+  /* --color-card-hover-background: #e5e7eb; */ /* Alternative: plain light gray */
 
-    --color-brand-green-300: #6ee7b7;
-    --color-brand-green-400: #34d399;
-    --color-brand-green-500: #10b981;
-    --color-brand-green-600: #059669;
-    --color-brand-green-700: #047857;
-    --color-brand-green-800: #065f46;
-    --color-brand-green-900: #064e3b;
-    --color-brand-green-950: #022c22;
 
-    --color-brand-gray-300: #4b5563;
-    --color-brand-gray-400: #374151;
+  /* Greens for light theme - ensure they are vibrant and contrast well */
+  --color-brand-green-300: #6ee7b7; /* Good for light accents if needed */
+  --color-brand-green-400: #34d399; /* Good for text, medium vibrancy */
+  --color-brand-green-500: #10b981; /* Stronger accent, good for links/text */
+  --color-brand-green-600: #059669; /* Darker, good for important text or light-text backgrounds */
+  --color-brand-green-700: #047857; /* Dark green, good for backgrounds that will have white text */
+  --color-brand-green-800: #065f46;
+  --color-brand-green-900: #064e3b; /* Very dark green for specific uses like dark borders if needed */
+  --color-brand-green-950: #022c22;
 
-    --gradient-text-from: var(--color-brand-green-500);
-    --gradient-text-via: var(--color-brand-green-600);
-    --gradient-text-to: var(--color-brand-green-700);
+  /* Grays for light theme (secondary text, placeholders) */
+  --color-brand-gray-300: #4b5563; /* Dark gray for secondary text */
+  --color-brand-gray-400: #6b7280; /* Slightly lighter gray for placeholders/muted */
 
-    --gradient-button-from: var(--color-brand-green-700);
-    --gradient-button-to: var(--color-brand-green-500);
+  /* Adjusted Gradient text for light theme - aiming for more vibrancy */
+  --gradient-text-from: var(--color-brand-green-400);   /* Was 500 - e.g., #34d399 */
+  --gradient-text-via: var(--color-brand-green-500);    /* Was 600 - e.g., #10b981 */
+  --gradient-text-to: var(--color-brand-green-600);     /* Was 700 - e.g., #059669 */
+
+  /* Gradient button can often use the same strong greens as dark mode, as text on it is white */
+  --gradient-button-from: var(--color-brand-green-700);
+  --gradient-button-to: var(--color-brand-green-500);
+
+  /* Softer Input Field Borders for light mode */
+  --color-input-border: var(--color-brand-green-500); /* Was effectively -900 (very dark) */
 }
 
+/* Shared utility styles (these use the theme variables) */
 body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .gradient-text {
-    @apply bg-gradient-to-r from-[var(--gradient-text-from)] via-[var(--gradient-text-via)] to-[var(--gradient-text-to)] bg-clip-text text-[var(--color-transparent)];
+  @apply bg-gradient-to-r from-[var(--gradient-text-from)] via-[var(--gradient-text-via)] to-[var(--gradient-text-to)] bg-clip-text text-[var(--color-transparent)];
 }
 
 .gradient-button {
-    @apply bg-gradient-to-l from-[var(--gradient-button-from)] to-[var(--gradient-button-to)];
+  @apply bg-gradient-to-l from-[var(--gradient-button-from)] to-[var(--gradient-button-to)];
 }
 
 .gradient-button-hover:hover {
-    @apply bg-gradient-to-r;
+  @apply bg-gradient-to-r;
 }

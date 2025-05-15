@@ -28,6 +28,12 @@ const ServicesSection: React.FC = () => {
     }),
   };
 
+  const itemHoverProps = {
+    scale: 1.03,
+    backgroundColor: "var(--color-card-hover-background)",
+    transition: { duration: 0.25, ease: "circOut" },
+  };
+
   return (
     <section className="pt-24 md:pt-32" id="services">
       <motion.h2
@@ -60,9 +66,9 @@ const ServicesSection: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={cardVariants}
-            className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 md:gap-8 mt-4 hover:bg-[var(--color-brand-green-900)] hover:bg-opacity-20 dark:hover:bg-opacity-50 p-4 md:p-6 rounded-2xl border-b border-[var(--color-brand-green-800)] transition-colors duration-300"
+            className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 md:gap-8 mt-4 hover:bg-[var(--color-card-hover-background)] hover:bg-opacity-20 dark:hover:bg-opacity-50 p-4 md:p-6 rounded-2xl border-b border-[var(--color-brand-green-800)] transition-colors duration-300"
           >
-            <h3 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] md:col-span-1">
+            <h3 className="text-3xl md:text-4xl font-bold text-[var(--color-brand-green-400)] md:col-span-1">
               {service.name}
             </h3>
             <p className="text-base md:text-lg max-w-full md:max-w-2xl text-justify text-[var(--color-brand-gray-300)] md:col-span-2">

@@ -61,11 +61,6 @@ const SkillsSection: React.FC = () => {
             viewport={{ once: true, amount: 0.1 }}
             variants={skillCardVariants}
             className="flex flex-col items-center justify-center gap-2 text-center w-32 h-32 md:w-36 md:h-36 bg-[var(--color-card-background)] hover:bg-[var(--color-card-hover-background)] rounded-2xl p-4 transition-colors duration-300 shadow-md"
-            whileHover={{
-              y: -5,
-              boxShadow:
-                "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)",
-            }}
           >
             <IconComponent
               className={"text-[var(--color-brand-green-500)]"}

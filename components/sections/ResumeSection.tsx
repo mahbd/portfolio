@@ -51,7 +51,7 @@ const ResumeSection: React.FC = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={cardVariants(true)}
-              className="bg-[var(--color-card-background)] p-4 rounded-2xl hover:text-[var(--color-white)] hover:bg-gradient-to-l from-[var(--color-brand-green-900)] to-[var(--color-brand-green-700)] transition-all duration-300 shadow-lg"
+              className="bg-[var(--color-card-background)] p-4 rounded-2xl hover:text-[var(--color-white)] hover:bg-[var(--color-card-hover-background)] transition-all duration-300 shadow-lg"
               whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
             >
               <p className="font-bold text-base md:text-lg text-[var(--color-brand-green-400)]">
@@ -86,7 +86,7 @@ const ResumeSection: React.FC = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={cardVariants(false)}
-              className="bg-[var(--color-card-background)] p-4 rounded-2xl hover:text-[var(--color-white)] hover:bg-gradient-to-l from-[var(--color-brand-green-900)] to-[var(--color-brand-green-700)] transition-all duration-300 shadow-lg"
+              className="bg-[var(--color-card-background)] p-4 rounded-2xl hover:text-[var(--color-white)] hover:bg-[var(--color-card-hover-background)] transition-all duration-300 shadow-lg"
               whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
             >
               <p className="font-bold text-base md:text-lg text-[var(--color-brand-green-400)]">

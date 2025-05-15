@@ -66,7 +66,7 @@ const HeroSection: React.FC = () => {
           variants={itemVariants}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-flex items-center border-2 border-[var(--color-brand-green-700)] text-[var(--color-brand-green-300)] rounded-full gap-2 px-8 py-2 mt-6 hover:bg-[var(--color-brand-green-700)] hover:text-[var(--color-white)] transition duration-300"
+          className="inline-flex items-center border-2 border-[var(--color-brand-green-700)] text-[var(--color-brand-green-500)] rounded-full gap-2 px-8 py-2 mt-6 hover:bg-[var(--color-brand-green-700)] hover:text-[var(--color-white)] transition duration-300"
         >
           Download Resume <AiOutlineDownload size="20px" />
         </motion.a>

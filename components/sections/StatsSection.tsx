@@ -26,14 +26,6 @@ const StatsSection: React.FC = () => {
     },
   };
 
-  const itemHoverProps = {
-    scale: 1.03,
-    boxShadow:
-      "0px 12px 28px -5px rgba(0, 0, 0, 0.15), 0px 10px 10px -6px rgba(0, 0, 0, 0.12)",
-    backgroundColor: "var(--color-card-hover-background)",
-    transition: { duration: 0.25, ease: "circOut" },
-  };
-
   return (
     <motion.section
       className="pt-20 md:pt-24"
@@ -50,7 +42,6 @@ const StatsSection: React.FC = () => {
                 key={index}
                 className="flex flex-col md:flex-row items-center justify-center md:items-start text-center md:text-left gap-3 p-4 rounded-xl bg-[var(--color-card-background)] transition-colors duration-300 shadow-lg"
                 variants={itemVariants}
-                whileHover={itemHoverProps}
               >
                 <h3 className="text-5xl font-bold gradient-text whitespace-nowrap">
                   {item.value}
@@ -71,7 +62,6 @@ const StatsSection: React.FC = () => {
                 key={index}
                 className="sm:col-span-2 md:col-span-4 p-6 py-8 rounded-xl bg-[var(--color-card-background)] transition-colors duration-300 shadow-lg flex flex-col items-center justify-center text-center"
                 variants={itemVariants}
-                whileHover={itemHoverProps}
               >
                 <h3 className="text-2xl lg:text-3xl font-bold text-[var(--color-brand-green-400)] mb-1">
                   {item.title}
