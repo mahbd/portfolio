@@ -103,11 +103,11 @@ const HeroSection: React.FC = () => {
         variants={imageVariants}
       >
         <Image
-          src="/images/mahmudul.png"
+          src="/images/mahmudul2025.jpg"
           alt="Mahmudul Alam"
           width={384}
-          height={384}
-          className="bg-[var(--color-brand-green-950)] h-80 w-80 md:h-96 md:w-96 object-cover rounded-2xl rotate-3 hover:rotate-1 hover:border-4 hover:border-[var(--color-brand-green-800)] shadow-2xl transition-transform duration-300"
+          height={500}
+          className="bg-[var(--color-brand-green-950)] h-96 w-80 md:h-[500px] md:w-[384px] object-cover rounded-2xl  hover:rotate-1 hover:border-4 hover:border-[var(--color-brand-green-800)] shadow-2xl transition-transform duration-300"
           priority
         />
       </motion.div>
