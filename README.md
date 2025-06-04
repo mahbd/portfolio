@@ -1,42 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [
-`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mahmudul Alam – Portfolio
+
+> A personal portfolio website showcasing my skills and projects, built with Next.js 13 (App Router), React, TypeScript, and Tailwind CSS.
+
+Available at https://mahmudul.com.bd
+
+## Table of Contents
+
+- [Demo](#demo)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Data & Configuration](#data--configuration)
+- [Deployment](#deployment)
+- [License](#license)
+- [Contact](#contact)
+
+## Demo
+
+Run locally on http://localhost:3000 after starting the development server.
+
+## Technologies
+
+- Next.js 13 (App Router)
+- React & TypeScript
+- Tailwind CSS
+- React Icons
+
+## Features
+
+- Fully responsive, mobile-first design
+- Light/dark theme toggling with CSS variables
+- Modular, data-driven sections: Hero, Stats, Services, Works, Hobby Projects, Resume, Skills, Contact
+- Easy content management via a central `data/portfolioData.ts` file
+- SEO-friendly metadata configuration
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```powershell
+   git clone https://github.com/your-username/portfolio.git
+   cd portfolio
+   ```
+2. Install dependencies:
+   ```powershell
+   npm install
+   ```
+3. Start development server:
+   ```powershell
+   npm run dev
+   ```
+4. Open http://localhost:3000 in your browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+
+```text
+.
+├─ app/
+│  ├─ layout.tsx      # Root layout with ThemeProvider & Header
+│  └─ page.tsx        # HomePage importing all sections
+├─ components/        # UI components & sections
+│  └─ sections/       # Individual page sections
+├─ contexts/          # ThemeContext for light/dark mode
+├─ data/
+│  └─ portfolioData.ts  # All content and icon configuration
+├─ public/
+│  └─ images/         # Static image assets
+├─ styles/
+│  └─ globals.css     # Tailwind imports & CSS variables
+├─ next.config.ts
+├─ postcss.config.mjs
+├─ tailwind.config.js
+└─ README.md          # Project overview and setup instructions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` – Start development server
+- `npm run build` – Build for production
+- `npm run start` – Start production server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically
-optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Data & Configuration
 
-## Learn More
+All dynamic content lives in `data/portfolioData.ts`: contact links, services, works, experiences, education, skills, and stats. Update this file to modify website content without touching UI code.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push to GitHub
+2. Connect your repository on [Vercel](https://vercel.com/new)
+3. Vercel auto-detects Next.js and deploys your site
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions
-are welcome!
+## License
 
-## Deploy on Vercel
+This project is open source under the MIT License.
 
-The easiest way to deploy your Next.js app is to use
-the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for
-more details.
+- **Portfolio**: https://mahmudul.com.bd
+- **Email**: mahbd17@hotmail.com
+- **Facebook**: https://facebook.com/maha48bd20thb
+- **LinkedIn**: https://www.linkedin.com/in/mah20t/
+- **GitHub**: https://github.com/mahbd
+- **Codeforces**: https://codeforces.com/profile/mahbd
