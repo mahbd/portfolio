@@ -36,6 +36,7 @@ export interface Work {
   name: string;
   description: string;
   image: string;
+  link?: string;
 }
 
 export interface Experience {
@@ -100,21 +101,25 @@ export const works: Work[] = [
     name: "EJP",
     description: "Easy Job Preparation is a platform for preparing for various competitive exams. You can practice for BCS, primary school exams, bank recruitment, and more. It provides organized materials and mock tests. The interface is simple and user-friendly.",
     image: "/images/ejp.png",
+    link: "https://ejp.com.bd/",
   },
   {
     name: "FTS",
     description: "The File Tracking System is designed for Begum Rokeya University. It helps track files within different offices and departments. You can see where a file currently is and its movement history. This increases transparency and efficiency.",
     image: "/images/fts.jpg",
+    link: "http://fts.brur.ac.bd/",
   },
   {
     name: "DRIL",
     description: "DRIL is a customized chat platform built for crypto users. It supports secure messaging with encryption. The interface is designed to be lightweight and intuitive. DRIL makes crypto-related discussions easier and safer.",
     image: "/images/dril.jpg",
+    link: "http://dril.fun/",
   },
   {
     name: "TSP",
     description: "Time Smart Professionals is tailored for accounting job seekers. It offers training content, mock tests, and tips focused on finance roles. Users can prepare for accounting exams effectively. The platform emphasizes time management and smart strategies.",
     image: "/images/tsp.png",
+    link: "http://tsp.com.bd/",
   },
 ];
 

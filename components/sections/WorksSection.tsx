@@ -47,22 +47,24 @@ const WorksSection: React.FC = () => {
             className="group rounded-2xl overflow-hidden shadow-lg hover:bg-[var(--color-card-hover-background)] transition-colors duration-300 bg-[var(--color-card-background)]"
             whileHover={{ y: -5, transition: { duration: 0.2 } }}
           >
-            <div className="relative w-full aspect-video">
-              <Image
-                src={work.image}
-                alt={work.name}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="cursor-pointer p-4">
-              <h3 className="text-2xl font-bold text-[var(--color-brand-green-400)]">
-                {work.name}
-              </h3>
-              <p className="text-sm text-[var(--color-foreground)] text-justify mt-2">
-                {work.description}
-              </p>
-            </div>
+            <a href={work.link} target="_blank" rel="noopener noreferrer">
+              <div className="relative cursor-pointer w-full aspect-video">
+                <Image
+                  src={work.image}
+                  alt={work.name}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="cursor-pointer p-4">
+                <h3 className="text-2xl font-bold text-[var(--color-brand-green-400)]">
+                  {work.name}
+                </h3>
+                <p className="text-sm text-[var(--color-foreground)] text-justify mt-2">
+                  {work.description}
+                </p>
+              </div>
+            </a>
           </motion.div>
         ))}
       </div>
