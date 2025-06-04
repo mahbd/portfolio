@@ -148,13 +148,14 @@ export const hobbyWorks: Work[] = [
 
 
 export const experiences: Experience[] = [
-  { time: "2024 - Present", role: "Full Stack Developer", company: "EJP" },
-  { time: "2023 - 2024", role: "Full Stack Developer", company: "TSP" },
+  { time: "Oct 24 - Present", role: "Full Stack Developer", company: "EJP" },
+  { time: "Jul 24– Oct 24", role: "Full Stack Developer", company: "BRUR" },
+  { time: "Jul 23 - May 24", role: "Full Stack Developer", company: "TSP" },
 ];
 
 export const educations: Education[] = [
   {
-    time: "2020 - 2023",
+    time: "2020 - 2025",
     school: "Begum Rokeya University, Rangpur",
     degree: "Bachelor of Science in CSE",
   },
