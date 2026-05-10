@@ -2,20 +2,20 @@
 
 import React from "react";
 import { services } from "@/data/portfolioData";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const ServicesSection: React.FC = () => {
-  const titleVariants = {
+  const titleVariants: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const paragraphVariants = {
+  const paragraphVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, x: -30 },
     visible: (i: number) => ({
       opacity: 1,

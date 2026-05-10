@@ -4,10 +4,10 @@ import React from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { TfiEmail } from "react-icons/tfi";
 import { FaLocationDot } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const Contact: React.FC = () => {
-  const formContainerVariants = {
+  const formContainerVariants: Variants = {
     hidden: { opacity: 0, x: -50 },
     visible: {
       opacity: 1,
@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
     },
   };
 
-  const detailsContainerVariants = {
+  const detailsContainerVariants: Variants = {
     hidden: { opacity: 0, x: 50 },
     visible: {
       opacity: 1,
@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
     },
   };
 
-  const detailItemVariants = {
+  const detailItemVariants: Variants = {
     hidden: { opacity: 0, x: 30 },
     visible: {
       opacity: 1,
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
     },
   };
 
-  const inputVariants = {
+  const inputVariants: Variants = {
     hidden: { opacity: 0, y: 15 },
     visible: (i: number) => ({
       opacity: 1,
@@ -76,8 +76,8 @@ const Contact: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center mb-6 md:mb-10 text-[var(--color-brand-gray-300)]"
         >
-          I design and code beautifully simple things, and I love what I do.
-          Just simple like that!
+          I build efficient full stack products, backend systems, and practical
+          applications for real users.
         </motion.p>
         <form className="space-y-3">
           <motion.input
@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
           <div>
             <p className="text-lg text-[var(--color-brand-gray-400)]">Email</p>
             <p className="text-lg font-bold text-[var(--color-foreground)]">
-              mahmudula2000@gmail.com
+              mahbd17@hotmail.com
             </p>
           </div>
         </motion.div>

@@ -7,8 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mahmudul Alam - Portfolio",
-  description: "Homepage for Mahmudul Alam's portfolio",
+  title: "Mahmudul Alam - Full Stack Developer",
+  description:
+    "Portfolio of Mahmudul Alam, a full stack developer working with Rust, Django, React, Next.js, TypeScript, PostgreSQL, and cloud infrastructure.",
 };
 
 export default function RootLayout({
@@ -27,7 +28,7 @@ export default function RootLayout({
             </main>
             <section className="mt-16 mb-5 px-4">
               <p className="text-center text-[var(--color-brand-green-500)]">
-                &copy; 2024 All Rights Reserved By Mahmudul Alam
+                &copy; 2026 All Rights Reserved By Mahmudul Alam
               </p>
             </section>
           </div>

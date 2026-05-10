@@ -11,8 +11,13 @@ import {
   SiCplusplus,
   SiDjango,
   SiDocker,
+  SiGooglecloud,
   SiJavascript,
   SiKotlin, 
+  SiMysql,
+  SiNginx,
+  SiPostgresql,
+  SiPrisma,
   SiReact,
   SiRust,
   SiTypescript,
@@ -79,19 +84,23 @@ export const contactIcons: ContactIcon[] = [
 export const services: Service[] = [
   {
     name: "Backend",
-    description: "I build robust and scalable backends using modern technologies. My focus is on performance, security, and clean architecture.",
+    description:
+      "I build efficient backend systems with Rust, Actix, Django, PostgreSQL, MySQL, and Prisma, with a focus on performance, security, and clean architecture.",
   },
   {
     name: "Frontend",
-    description: "I craft modern, responsive frontends with great user experience. I aim for clean design and accessibility in every project.",
+    description:
+      "I create responsive interfaces with React.js, Next.js, TypeScript, and modern state-management patterns for smooth user experiences.",
   },
   {
     name: "Full Stack",
-    description: "I develop full stack applications from backend to frontend. I ensure seamless integration and smooth performance across the stack.",
+    description:
+      "I deliver full stack products from database design and APIs to deployment, cloud storage, server setup, and frontend integration.",
   },
   {
     name: "Application",
-    description: "I build mobile applications that are fast and user-friendly. I focus on intuitive design and reliable performance.",
+    description:
+      "I build practical web and Android applications, including secure content delivery, payment integration, and workflow automation tools.",
   },
 ];
 
@@ -99,25 +108,29 @@ export const services: Service[] = [
 export const works: Work[] = [
   {
     name: "EJP",
-    description: "Easy Job Preparation is a platform for preparing for various competitive exams. You can practice for BCS, primary school exams, bank recruitment, and more. It provides organized materials and mock tests. The interface is simple and user-friendly.",
+    description:
+      "Easy Job Preparation is a competitive exam platform rebuilt with Rust, Actix, PostgreSQL, Google Cloud Storage, and React.js. The work improved application efficiency, reduced server load, and added AI-assisted data organization.",
     image: "/images/ejp.png",
     link: "https://ejp.com.bd/",
   },
   {
     name: "FTS",
-    description: "The File Tracking System is designed for Begum Rokeya University. It helps track files within different offices and departments. You can see where a file currently is and its movement history. This increases transparency and efficiency.",
+    description:
+      "A file-tracking system for Begum Rokeya University serving 1000+ users. It uses Next.js, TypeScript, MySQL, and Prisma with QR/barcode-based access, timeline visualization, and real-time email notifications.",
     image: "/images/fts.jpg",
     link: "http://fts.brur.ac.bd/",
   },
   {
     name: "DRIL",
-    description: "DRIL is a customized chat platform built for crypto users. It supports secure messaging with encryption. The interface is designed to be lightweight and intuitive. DRIL makes crypto-related discussions easier and safer.",
+    description:
+      "A lightweight chat platform tailored for crypto communities, focused on secure messaging, fast interaction, and an intuitive discussion experience.",
     image: "/images/dril.jpg",
     link: "http://dril.fun/",
   },
   {
     name: "TSP",
-    description: "Time Smart Professionals is tailored for accounting job seekers. It offers training content, mock tests, and tips focused on finance roles. Users can prepare for accounting exams effectively. The platform emphasizes time management and smart strategies.",
+    description:
+      "Time Smart Professionals is an accounting job preparation platform built with Django, React.js, PostgreSQL, Kotlin, and Redux. The platform supports high traffic, secure Android content delivery, and Bkash, Nagad, and Rocket payments.",
     image: "/images/tsp.png",
     link: "http://tsp.com.bd/",
   },
@@ -125,39 +138,45 @@ export const works: Work[] = [
 
 export const hobbyWorks: Work[] = [
   {
-    name: "Game Hub",
-    description: "Game Hub allows users to browse and search through a curated list of games. It demonstrates the power and flexibility of React. The UI is clean and responsive. It’s perfect for showcasing dynamic filtering and routing.",
-    image: "/images/game-hub.png",
-  },
-  {
-    name: "Iftar Delights",
-    description: "Iftar Delights is a business model that focuses on curated dining during Ramadan. It helps users discover and order delicious iftar meals. The project highlights user experience and clean UI design. It was built with both tech and business in mind.",
-    image: "/images/iftar-delights.png",
-  },
-  {
-    name: "Components",
-    description: "Components is a collection of reusable UI parts designed to speed up development. If you ever forget where you kept a component, this tool comes to the rescue. It organizes your code assets efficiently. Ideal for scalable React projects.",
+    name: "Meeting Helper",
+    description:
+      "A browser extension for tracking attendance and activity during online meetings and virtual classes. It helped identify attendance patterns and user engagement using JavaScript and web scraping.",
     image: "/images/components.png",
   },
   {
+    name: "B12J Online Judge",
+    description:
+      "A custom online judge for creating problems, contests, tutorials, and evaluating submissions. It used Django, React, Redux, JavaScript, and WebSocket-based real-time updates.",
+    image: "/images/game-hub.png",
+  },
+  {
     name: "Issue Tracker",
-    description: "Issue Tracker helps teams manage bugs and feature requests in a project. It supports adding, editing, and closing issues efficiently. The design is simple yet effective. Perfect for developers working in teams or solo.",
+    description:
+      "A task and issue management app with add, edit, delete, assignment, authorization checks, React Query, Zod, Zustand, Auth.js, Prisma, TypeScript, and MongoDB.",
     image: "/images/issue-tracker.png",
   },
 ];
 
 
 export const experiences: Experience[] = [
-  { time: "Oct 24 - Present", role: "Full Stack Developer", company: "EJP" },
-  { time: "Jul 24– Oct 24", role: "Full Stack Developer", company: "BRUR" },
-  { time: "Jul 23 - May 24", role: "Full Stack Developer", company: "TSP" },
+  { time: "Oct 2024 - Present", role: "Full Stack Developer", company: "EJP" },
+  {
+    time: "Aug 2024 - Oct 2024",
+    role: "Backend Developer",
+    company: "Begum Rokeya University",
+  },
+  {
+    time: "Jul 2023 - Dec 2023",
+    role: "Android and Web Developer",
+    company: "Time Smart Professionals",
+  },
 ];
 
 export const educations: Education[] = [
   {
-    time: "2020 - 2025",
+    time: "Jan 2020 - Jan 2025",
     school: "Begum Rokeya University, Rangpur",
-    degree: "Bachelor of Science in CSE",
+    degree: "B.Sc. in Computer Science and Engineering",
   },
   {
     time: "2018 - 2020",
@@ -170,13 +189,18 @@ export const skills: Skill[] = [
   { icon: FaPython, percentage: 95, name: "Python" },
   { icon: SiDjango, percentage: 95, name: "Django" },
   { icon: SiRust, percentage: 95, name: "Rust" },
-  { icon: BsGearWideConnected, percentage: 95, name: "Rust" },
+  { icon: BsGearWideConnected, percentage: 95, name: "Actix" },
   { icon: SiCplusplus, percentage: 95, name: "C++" },
   { icon: FaLinux, percentage: 95, name: "Linux" },
   { icon: SiReact, percentage: 90, name: "React" },
   { icon: RiNextjsFill, percentage: 90, name: "Next.js" },
   { icon: SiTypescript, percentage: 90, name: "TypeScript" },
   { icon: SiJavascript, percentage: 90, name: "JavaScript" },
+  { icon: SiPostgresql, percentage: 90, name: "PostgreSQL" },
+  { icon: SiMysql, percentage: 85, name: "MySQL" },
+  { icon: SiPrisma, percentage: 85, name: "Prisma" },
+  { icon: SiGooglecloud, percentage: 80, name: "Google Cloud" },
+  { icon: SiNginx, percentage: 80, name: "Nginx" },
   { icon: BsAndroid2, percentage: 85, name: "Android" },
   { icon: FaGitAlt, percentage: 80, name: "Git" },
   { icon: RiJavaFill, percentage: 70, name: "Java" },
@@ -188,15 +212,15 @@ export const skills: Skill[] = [
 export const statItemsData = [
   {
     type: "stat" as const,
-    value: "4",
+    value: "5+",
     label1: "Years of",
     label2: "Experience",
   },
   {
     type: "stat" as const,
-    value: "10+",
-    label1: "Real Life Projects",
-    label2: "Completed",
+    value: "1000+",
+    label1: "FTS",
+    label2: "Users Served",
   },
   {
     type: "stat" as const,
@@ -212,8 +236,8 @@ export const statItemsData = [
   },
   {
     type: "achievement" as const,
-    title: "Two Times Divisional Champion",
+    title: "Two-Time ICPC Divisional Champion",
     subtitle:
-      "In International Collegiate Programming Contest (ICPC), Asia Dhaka Regional Contest",
+      "Divisional champion at ICPC Asia Dhaka Regional Contest in 2022 and 2024",
   },
 ];

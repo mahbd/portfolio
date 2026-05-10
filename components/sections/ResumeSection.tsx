@@ -2,10 +2,10 @@
 
 import React from "react";
 import { educations, experiences } from "@/data/portfolioData";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const ResumeSection: React.FC = () => {
-  const titleVariants = {
+  const titleVariants: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
       opacity: 1,
@@ -14,7 +14,7 @@ const ResumeSection: React.FC = () => {
     },
   };
 
-  const cardVariants = (fromLeft: boolean = true) => ({
+  const cardVariants = (fromLeft: boolean = true): Variants => ({
     hidden: { opacity: 0, x: fromLeft ? -40 : 40 },
     visible: (i: number) => ({
       opacity: 1,

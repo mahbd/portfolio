@@ -4,10 +4,10 @@ import React from "react";
 import Image from "next/image";
 import { AiOutlineDownload } from "react-icons/ai";
 import { contactIcons } from "@/data/portfolioData";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const HeroSection: React.FC = () => {
-  const sectionVariants = {
+  const sectionVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -17,12 +17,12 @@ const HeroSection: React.FC = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const imageVariants = {
+  const imageVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8, x: 50 },
     visible: {
       opacity: 1,
@@ -51,14 +51,14 @@ const HeroSection: React.FC = () => {
           variants={itemVariants}
           className="font-bold text-4xl lg:text-5xl gradient-text mt-3 leading-tight"
         >
-          Software Engineer + Competitive Programmer
+          Full Stack Developer + Competitive Programmer
         </motion.h2>
         <motion.p
           variants={itemVariants}
           className="text-lg md:text-xl mt-5 text-[var(--color-brand-gray-300)]"
         >
-          I break down complex real world problems to create simple, elegant,
-          and efficient solutions that help millions of people.
+          I build production web and Android applications with Rust, Django,
+          React, Next.js, TypeScript, PostgreSQL, and cloud infrastructure.
         </motion.p>
         <motion.a
           href="/resume.pdf"

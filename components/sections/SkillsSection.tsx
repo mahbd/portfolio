@@ -2,20 +2,20 @@
 
 import React from "react";
 import { skills } from "@/data/portfolioData";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const SkillsSection: React.FC = () => {
-  const titleVariants = {
+  const titleVariants: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const paragraphVariants = {
+  const paragraphVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
   };
 
-  const skillCardVariants = {
+  const skillCardVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: (i: number) => ({
       opacity: 1,
@@ -69,6 +69,11 @@ const SkillsSection: React.FC = () => {
             <p className="text-lg md:text-xl font-semibold text-[var(--color-foreground)]">
               {percentage}%
             </p>
+            {name && (
+              <p className="text-xs md:text-sm font-medium text-[var(--color-brand-gray-300)]">
+                {name}
+              </p>
+            )}
           </motion.div>
         ))}
       </div>
