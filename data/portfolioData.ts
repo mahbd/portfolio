@@ -107,68 +107,102 @@ export const services: Service[] = [
 
 export const works: Work[] = [
   {
-    name: "EJP",
+    name: "EJP LMS Platform",
     description:
-      "Easy Job Preparation is a competitive exam platform rebuilt with Rust, Actix, PostgreSQL, Google Cloud Storage, and React.js. The work improved application efficiency, reduced server load, and added AI-assisted data organization.",
+      "Architected and shipped a production EdTech LMS across Rust/Actix backend, React SPA, Next.js platform, and Android app with custom DRM and payment gateway integration.",
     image: "/images/ejp.png",
     link: "https://ejp.com.bd/",
   },
   {
-    name: "FTS",
+    name: "University File Tracking (BRUR)",
     description:
-      "A file-tracking system for Begum Rokeya University serving 1000+ users. It uses Next.js, TypeScript, MySQL, and Prisma with QR/barcode-based access, timeline visualization, and real-time email notifications.",
+      "Built a Next.js application for 1000+ users with WebAuthn/FIDO2, passwordless login, QR/barcode workflows, and RBAC-driven document tracking timeline.",
     image: "/images/fts.jpg",
-    link: "http://fts.brur.ac.bd/",
+    link: "https://fts.brur.ac.bd/",
   },
   {
-    name: "DRIL",
+    name: "Time Smart E-Learning Rebuild",
     description:
-      "A lightweight chat platform tailored for crypto communities, focused on secure messaging, fast interaction, and an intuitive discussion experience.",
-    image: "/images/dril.jpg",
-    link: "http://dril.fun/",
-  },
-  {
-    name: "TSP",
-    description:
-      "Time Smart Professionals is an accounting job preparation platform built with Django, React.js, PostgreSQL, Kotlin, and Redux. The platform supports high traffic, secure Android content delivery, and Bkash, Nagad, and Rocket payments.",
+      "Rebuilt legacy WordPress platform using Django/DRF + React + Kotlin with Redis caching, Celery queues, secure JWT auth, and payment reconciliation pipelines.",
     image: "/images/tsp.png",
-    link: "http://tsp.com.bd/",
+  },
+  {
+    name: "Automation Solutionz Platform",
+    description:
+      "Developed Linux automation support, secure secret injection workflows, and async Redis-backed pipelines to improve throughput and reduce bottlenecks.",
+    image: "/images/zeuz.png",
+    link: "https://zeuz.ai/",
   },
 ];
 
 export const hobbyWorks: Work[] = [
   {
-    name: "Meeting Helper",
+    name: "st (Git Stacking CLI)",
     description:
-      "A browser extension for tracking attendance and activity during online meetings and virtual classes. It helped identify attendance patterns and user engagement using JavaScript and web scraping.",
-    image: "/images/components.png",
+      "Cross-platform Rust CLI for stacked pull request workflows with async GitHub API integration, OID-cache optimization, and AI-generated PR descriptions.",
+    image: "/images/st.png",
+    link: "https://github.com/mahbd/st",
+  },
+  {
+    name: "CMVault",
+    description:
+      "CLI snippet manager with Rust/Actix backend, Svelte frontend, shell integration, pg_trgm fuzzy search, Argon2 auth, and SQLx pooling.",
+    image: "/images/cmd.png",
+    link: "https://cmd.mahmudul.com.bd/",
+  },
+  {
+    name: "ZeuZ Bank",
+    description:
+      "Full-stack digital banking app with OTP verification, atomic Prisma transactions, Zod validation, JWT sessions, and Dockerized deployment.",
+    image: "/images/zbank.png",
+  },
+  {
+    name: "VLS Security Showcase",
+    description:
+      "Web security education platform demonstrating OWASP risks with CSP hardening, server-side sanitization, and detailed security event logging.",
+    image: "/images/issue-tracker.png",
+  },
+  {
+    name: "Disaster Relief Network",
+    description:
+      "Distributed microservices architecture with Spring Cloud Gateway, Spring Boot services, Next.js frontend, and Kotlin Android app.",
+    image: "/images/drn.png",
   },
   {
     name: "B12J Online Judge",
     description:
-      "A custom online judge for creating problems, contests, tutorials, and evaluating submissions. It used Django, React, Redux, JavaScript, and WebSocket-based real-time updates.",
+      "Competitive programming platform with Django Channels + WebSockets, JWT/OAuth2, async verdict pipeline, and decoupled React SPA frontend.",
     image: "/images/game-hub.png",
   },
   {
-    name: "Issue Tracker",
+    name: "Dril Messaging API",
     description:
-      "A task and issue management app with add, edit, delete, assignment, authorization checks, React Query, Zod, Zustand, Auth.js, Prisma, TypeScript, and MongoDB.",
-    image: "/images/issue-tracker.png",
+      "Real-time marketplace and messaging API using Express + Socket.IO, JWT over HTTP/WebSocket, RBAC middleware, and S3 pre-signed uploads.",
+    image: "/images/dril.jpg",
   },
 ];
 
 
 export const experiences: Experience[] = [
-  { time: "Oct 2024 - Present", role: "Full Stack Developer", company: "EJP" },
+  {
+    time: "Jul 2025 - Present",
+    role: "Software Engineer (Full-time, Remote)",
+    company: "Automation Solutionz",
+  },
+  {
+    time: "Oct 2024 - Jul 2025",
+    role: "Full-Stack Developer (Part-time, Remote)",
+    company: "EJP, Rangpur",
+  },
   {
     time: "Aug 2024 - Oct 2024",
-    role: "Backend Developer",
-    company: "Begum Rokeya University",
+    role: "Back End Developer (Contract, Remote)",
+    company: "Begum Rokeya University, Rangpur",
   },
   {
     time: "Jul 2023 - Dec 2023",
-    role: "Android and Web Developer",
-    company: "Time Smart Professionals",
+    role: "Full Stack Engineer (Part-time, Remote)",
+    company: "Time Smart Professionals, Rangpur",
   },
 ];
 

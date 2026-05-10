@@ -36,37 +36,53 @@ const HobbyProjectsSection: React.FC = () => {
         My Hobby Projects
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {hobbyWorks.map((project, index) => (
-          <motion.div
-            key={project.name}
-            custom={index}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={cardVariants}
-            // Entire card background changes on hover
-            className="group rounded-2xl overflow-hidden shadow-lg hover:bg-[var(--color-card-hover-background)] transition-colors duration-300 bg-[var(--color-card-background)]"
-            whileHover={{ y: -5, transition: { duration: 0.2 } }}
-          >
-            <div className="relative w-full aspect-video">
-              <Image
-                src={project.image}
-                alt={project.name}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            {/* Inner div for text content, no background styling here */}
-            <div className="cursor-pointer p-4">
-              <h3 className="text-2xl font-bold text-[var(--color-brand-green-400)]">
-                {project.name}
-              </h3>
-              <p className="text-sm text-[var(--color-foreground)] text-justify mt-2">
-                {project.description}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+        {hobbyWorks.map((project, index) => {
+          const cardContent = (
+            <>
+              <div className="relative w-full aspect-video">
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="cursor-pointer p-4">
+                <h3 className="text-2xl font-bold text-[var(--color-brand-green-400)]">
+                  {project.name}
+                </h3>
+                <p className="text-sm text-[var(--color-foreground)] text-justify mt-2">
+                  {project.description}
+                </p>
+              </div>
+            </>
+          );
+
+          return (
+            <motion.div
+              key={project.name}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={cardVariants}
+              className="group rounded-2xl overflow-hidden shadow-lg hover:bg-[var(--color-card-hover-background)] transition-colors duration-300 bg-[var(--color-card-background)]"
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+            >
+              {project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cardContent}
+                </a>
+              ) : (
+                cardContent
+              )}
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );
