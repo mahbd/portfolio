@@ -195,12 +195,12 @@ export const experiences: Experience[] = [
   },
   {
     time: "Oct 2024 - Jul 2025",
-    role: "Full-Stack Developer (Part-time, Remote)",
+    role: "Full-Stack Developer (Part-time, On-site)",
     company: "EJP, Rangpur",
   },
   {
     time: "Aug 2024 - Oct 2024",
-    role: "Back End Developer (Contract, Remote)",
+    role: "Back End Developer (Part-time, On-site)",
     company: "Begum Rokeya University, Rangpur",
   },
   {
