@@ -147,7 +147,7 @@ const Contact: React.FC = () => {
           <div>
             <p className="text-lg text-[var(--color-brand-gray-400)]">Phone</p>
             <p className="text-lg font-bold text-[var(--color-foreground)]">
-              +8801567953635
+              +8801322349539
             </p>
           </div>
         </motion.div>
@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
           <div>
             <p className="text-lg text-[var(--color-brand-gray-400)]">Email</p>
             <p className="text-lg font-bold text-[var(--color-foreground)]">
-              mahbd17@hotmail.com
+              mahmudula2000@gmail.com
             </p>
           </div>
         </motion.div>

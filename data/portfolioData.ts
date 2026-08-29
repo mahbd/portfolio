@@ -7,16 +7,20 @@ import {
   FaPython,
 } from "react-icons/fa";
 import {
+  SiCelery,
   SiCodeforces,
   SiCplusplus,
   SiDjango,
   SiDocker,
+  SiFastapi,
   SiGooglecloud,
   SiJavascript,
   SiKotlin, 
   SiMysql,
   SiNginx,
+  SiPandas,
   SiPostgresql,
+  SiRedis,
   SiPrisma,
   SiReact,
   SiRust,
@@ -129,7 +133,7 @@ export const works: Work[] = [
   {
     name: "Automation Solutionz Platform",
     description:
-      "Developed Linux automation support, secure secret injection workflows, and async Redis-backed pipelines to improve throughput and reduce bottlenecks.",
+      "Maintain the core Django/DRF backend and FastAPI services of ZeuZ, an AI-powered test-automation platform: Test Studio features for automated test-case creation, a secure test-data vault, Pandas-based processing of test-execution logs, and Linux desktop automation support.",
     image: "/images/zeuz.png",
     link: "https://zeuz.ai/",
   },
@@ -201,20 +205,20 @@ export const experiences: Experience[] = [
   },
   {
     time: "Jul 2023 - Dec 2023",
-    role: "Full Stack Engineer (Part-time, Remote)",
+    role: "Full Stack Engineer (Part-time, On-site)",
     company: "Time Smart Professionals, Rangpur",
   },
 ];
 
 export const educations: Education[] = [
   {
-    time: "Jan 2020 - Jan 2025",
+    time: "Jan 2020 - Aug 2025",
     school: "Begum Rokeya University, Rangpur",
     degree: "B.Sc. in Computer Science and Engineering",
   },
   {
-    time: "2018 - 2020",
-    school: "Rajshahi Government City College",
+    time: "2017 - 2019",
+    school: "Rajshahi City College, Rajshahi",
     degree: "Higher Secondary School Certificate",
   },
 ];
@@ -222,6 +226,7 @@ export const educations: Education[] = [
 export const skills: Skill[] = [
   { icon: FaPython, percentage: 95, name: "Python" },
   { icon: SiDjango, percentage: 95, name: "Django" },
+  { icon: SiFastapi, percentage: 80, name: "FastAPI" },
   { icon: SiRust, percentage: 95, name: "Rust" },
   { icon: BsGearWideConnected, percentage: 95, name: "Actix" },
   { icon: SiCplusplus, percentage: 95, name: "C++" },
@@ -232,6 +237,9 @@ export const skills: Skill[] = [
   { icon: SiJavascript, percentage: 90, name: "JavaScript" },
   { icon: SiPostgresql, percentage: 90, name: "PostgreSQL" },
   { icon: SiMysql, percentage: 85, name: "MySQL" },
+  { icon: SiRedis, percentage: 85, name: "Redis" },
+  { icon: SiCelery, percentage: 85, name: "Celery" },
+  { icon: SiPandas, percentage: 70, name: "Pandas" },
   { icon: SiPrisma, percentage: 85, name: "Prisma" },
   { icon: SiGooglecloud, percentage: 80, name: "Google Cloud" },
   { icon: SiNginx, percentage: 80, name: "Nginx" },
@@ -246,7 +254,7 @@ export const skills: Skill[] = [
 export const statItemsData = [
   {
     type: "stat" as const,
-    value: "5+",
+    value: "3+",
     label1: "Years of",
     label2: "Experience",
   },
