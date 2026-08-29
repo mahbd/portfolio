@@ -204,7 +204,7 @@ export const experiences: Experience[] = [
     company: "Begum Rokeya University, Rangpur",
   },
   {
-    time: "Jul 2023 - Dec 2023",
+    time: "Jul 2023 - May 2024",
     role: "Full Stack Engineer (Part-time, On-site)",
     company: "Time Smart Professionals, Rangpur",
   },
