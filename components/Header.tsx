@@ -10,6 +10,7 @@ const navItems = [
   { name: "Works", href: "#works" },
   { name: "Resume", href: "#resume" },
   { name: "Skills", href: "#skills" },
+  { name: "Tutorials", href: "/blog" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -44,7 +45,7 @@ const Header: React.FC = () => {
         {navItems.map((item) => (
           <a
             key={item.name}
-            href={item.href}
+            href={item.href.startsWith("#") ? `/${item.href}` : item.href}
             className={`font-bold hover:underline hover:text-[var(--color-brand-green-500)] hover:cursor-pointer transition-colors duration-200 ${
               activeHash === item.href
                 ? "text-[var(--color-brand-green-500)]"
